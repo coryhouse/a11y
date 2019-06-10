@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>A11y demo</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="#home">Home</a> | <a href="#">Inventory</a> | <a href="#">Contact</a>
+    </div>
+
+    <div>
+        <img class="search" src="/search-icon.png" /><input type="text" />
+    </div>
+    
+    <div class="heading">Inventory</div>
+    
+    <div>Tesla Model S</div>
+    
+    <div class="heading">Contact</div>
+
+    Email<br />
+    <input type="text" id="email" />
+    <div id="email-error" class="error"></div>
+
+    Message<br/> <textarea id="message"></textarea>
+    <div id="message-error" class="error"></div>
+    
+    <button onclick="submit()">Submit</button>
+    <script src="index.js"></script>
+    <div class="footer">Copyright 2019</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "a11y",
+  "version": "1.0.0",
+  "description": "Accessability Demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coryhouse/a11y.git"
+  },
+  "keywords": [
+    "a11y"
+  ],
+  "author": "Cory House",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coryhouse/a11y/issues"
+  },
+  "homepage": "https://github.com/coryhouse/a11y#readme",
+  "dependencies": {
+    "serve": "^11.0.1"
+  }
+}
