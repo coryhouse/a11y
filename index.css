@@ -3,8 +3,9 @@ body {
 }
 
 .search {
-  width: 30px;
-  height: 30px;
+  margin-top: 16px;
+  width: 16x;
+  height: 16px;
 }
 
 .error {
