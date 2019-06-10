@@ -17,6 +17,8 @@ The commands above will install necessary dependencies, then start the app on yo
 
 #### Structural
 
+[HTML5 Flowchart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.png)
+
 - [ ] Headers: `h1` - `h5`
 - [ ] Lists: `ul` or `li`
 - [ ] Stay native: Avoid buttons made of `divs`/`spans`
@@ -32,5 +34,9 @@ The commands above will install necessary dependencies, then start the app on yo
 ### Aria
 
 ### Landmarks
+
+Chromevox = `Ctrl+cmd` on Mac
+
+Navigate elements: `ChromeVox+arrows`
 
 - [ ] Use aria tags
