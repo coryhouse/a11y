@@ -22,20 +22,3 @@ body {
 .heading {
   font-size: 2em;
 }
-
-/* Good CSS */
-/* via https://dequeuniversity.com/rules/axe/3.2/skip-link?application=AxeChrome */
-#skip a {
-  display: block;
-  position: absolute;
-  left: -999px;
-  top: -999px;
-}
-
-#skip a:focus {
-  left: 0;
-  top: 0;
-  padding: 3px;
-  background: #ffc;
-  border: 1px solid #990000;
-}
