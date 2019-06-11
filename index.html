@@ -1,93 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>A11y demo</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
-    <div id="skip">
-      <a href="#main">Skip to main content</a>
-    </div>
-    <nav>
+    <div>
       <a href="#home">Home</a> | <a href="#">Inventory</a> |
       <a href="#">Contact</a>
-    </nav>
+    </div>
 
-    <form>
-      <img class="search" src="/search-icon.png" alt="Magnifying glass icon" />
-      <input type="search" aria-label="Search this website" />
-      <button type="submit" aria-label="Submit Search">Go</button>
+    <div>
+      <img class="search" src="/search-icon.png" />
+      <input type="text" />
+      <button type="submit">Go</button>
+    </div>
+
+    <h1>Inventory</h1>
+
+    <table>
+      <caption>
+        Vehicle Inventory
+      </caption>
+      <tr>
+        <th>Make</th>
+        <th>Model</th>
+      </tr>
+      <tr>
+        <td>
+          Tesla
+        </td>
+        <td>
+          Model S
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Jaguar
+        </td>
+        <td>
+          X-type
+        </td>
+      </tr>
+    </table>
+
+    <form onsubmit="submit()">
+      <div class="heading">Contact</div>
+      Email<br />
+      <input type="text" id="email" onblur="validate('email', 'Email')" />
+      <p id="email-error" class="error"></p>
+
+      Message<br />
+      <textarea id="message" onblur="validate('message', 'Message')"></textarea>
+      <p id="message-error" class="error"></p>
+
+      <input type="checkbox" /> Subscribe to mailing list<br />
+
+      <button type="submit">Submit</button>
     </form>
-
-    <main id="main">
-      <h1>Inventory</h1>
-
-      <table>
-        <caption>
-          Vehicle Inventory
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Make</th>
-            <th scope="col">Model</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              Tesla
-            </td>
-            <td>
-              Model S
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Jaguar
-            </td>
-            <td>
-              X-type
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </main>
-
-    <section title="Contact Form">
-      <form onsubmit="submit()">
-        <h1>Contact</h1>
-        <label for="email">Email</label><br />
-        <input
-          type="text"
-          id="email"
-          required
-          aria-errormessage="email-error"
-          aria-invalid="false"
-          onblur="validate('email', 'Email')"
-        />
-        <p id="email-error" role="alert" class="error"></p>
-
-        <label for="message">Message</label><br />
-        <textarea
-          id="message"
-          required
-          aria-errormessage="message-error"
-          aria-invalid="false"
-          onblur="validate('message', 'Message')"
-        ></textarea>
-        <p id="message-error" role="alert" class="error"></p>
-
-        <label><input type="checkbox" /> Subscribe to mailing list</label><br />
-
-        <button type="submit">Send message</button>
-      </form>
-      <script src="index.js"></script>
-    </section>
-    <footer>
-      <address>
-        500 Main, San Francisco, CA
-      </address>
+    <script src="index.js"></script>
+    <div class="footer">
+      500 Main, San Francisco, CA<br />
       Copyright 2019
-    </footer>
+    </div>
   </body>
 </html>
