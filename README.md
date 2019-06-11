@@ -11,6 +11,13 @@ npm start
 
 The commands above will install necessary dependencies, then start the app on your machine.
 
+## A11y Tools
+
+- [ChromeVox extension](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) screen reader for Chrome
+- [Axe](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) accessibility checker Chrome extension
+- [Wave](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) accessibility evaluation tool for Chrome
+- [Siteimprove](https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc/related?hl=en-US)
+
 ## Checklist
 
 ### Semantic markup
@@ -35,8 +42,12 @@ The commands above will install necessary dependencies, then start the app on yo
 
 ### Landmarks
 
-Chromevox = `Ctrl+cmd` on Mac
+- [ ] Tab from URl [should provide display link to skip to main content](https://dequeuniversity.com/rules/axe/3.2/skip-link?application=AxeChrome). (see Google.com as example)
 
+### Chromevox Commands
+
+Chromevox = `Ctrl+cmd` on Mac
+Chromvox + . = Show all commands and search box
 Navigate elements: `ChromeVox+arrows`
 
 - [ ] Use aria tags
