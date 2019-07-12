@@ -2,6 +2,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.container-fluid {
+  width: 750px;
+}
+
 .search {
   margin-top: 16px;
   width: 16x;
@@ -39,4 +43,15 @@ but accessible to screen readers.
   padding: 3px;
   background: #ffc;
   border: 1px solid #990000;
+}
+
+/* via https://accessible360.com/accessible360-blog/use-aria-label-screen-reader-text/ */
+.screen-reader-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
 }

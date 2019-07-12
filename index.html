@@ -2,44 +2,54 @@
 <html lang="en">
   <head>
     <title>A11y demo</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
-    <div id="skip">
-      <a href="#main">Skip to main content</a>
-    </div>
-    <nav>
-      <a href="#home">Home</a> | <a href="#">Inventory</a> |
-      <a href="#">Contact</a>
-    </nav>
+    <div class="container-fluid">
+      <div id="skip">
+        <a href="#main">Skip to main content</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
 
-    <header>
-      <form>
-        <img
-          class="search"
-          src="/search-icon.png"
-          alt="Magnifying glass icon"
-        />
-        <input type="search" aria-label="Search this website" />
-        <button type="submit" aria-label="Submit Search">Go</button>
-      </form>
-    </header>
+      <div>
+        <a href="/home">Home</a><br />
+        <a href="/contact">Contact</a><br />
+      </div>
 
-    <main id="main">
-      <h1>Inventory</h1>
+      <header>
+        <form>
+          <img
+            class="search"
+            src="/search-icon.png"
+            alt="Magnifying glass icon"
+          />
+          <input type="search" aria-label="Search this website" />
+          <button type="submit" aria-label="Submit Search">Go</button>
+        </form>
+      </header>
 
-      <table>
-        <caption>
-          Vehicle Inventory
-        </caption>
-        <thead>
+      <main id="main">
+        <h1>Inventory</h1>
+
+        <table>
+          <caption>
+            Vehicle Inventory
+          </caption>
           <tr>
+            <th scope="col">Id</th>
             <th scope="col">Make</th>
             <th scope="col">Model</th>
           </tr>
-        </thead>
-        <tbody>
           <tr>
+            <th scope="row">
+              1
+            </th>
             <td>
               Tesla
             </td>
@@ -48,6 +58,7 @@
             </td>
           </tr>
           <tr>
+            <th scope="row">2</th>
             <td>
               Jaguar
             </td>
@@ -55,45 +66,75 @@
               X-type
             </td>
           </tr>
-        </tbody>
-      </table>
-    </main>
+        </table>
+      </main>
 
-    <section title="Contact Form">
-      <form onsubmit="submit()">
-        <h1>Contact</h1>
-        <label for="email">Email</label><br />
-        <input
-          type="text"
-          id="email"
-          required
-          aria-errormessage="email-error"
-          aria-invalid="false"
-          onblur="validate('email', 'Email')"
-        />
-        <p id="email-error" role="alert" class="error"></p>
+      <section>
+        <form onsubmit="submit()">
+          <h1>Contact Us</h1>
+          <div class="h1">Contact Us</div>
+          <button onClick="endEmail()">Send</button>
+          <label for="email">Email</label><br />
+          <input
+            type="text"
+            id="email"
+            required
+            aria-errormessage="email-error"
+            aria-invalid="false"
+            onblur="validate('email', 'Email')"
+          />
+          <p id="email-error" role="alert" class="error"></p>
 
-        <label for="message">Message</label><br />
-        <textarea
-          id="message"
-          required
-          aria-errormessage="message-error"
-          aria-invalid="false"
-          onblur="validate('message', 'Message')"
-        ></textarea>
-        <p id="message-error" role="alert" class="error"></p>
+          <label for="message">Message</label><br />
+          <textarea
+            id="message"
+            required
+            aria-errormessage="message-error"
+            aria-invalid="false"
+            onblur="validate('message', 'Message')"
+          ></textarea>
+          <p id="message-error" role="alert" class="error"></p>
 
-        <label><input type="checkbox" /> Subscribe to mailing list</label><br />
+          <label><input type="checkbox" /> Subscribe to mailing list</label
+          ><br />
 
-        <button type="submit">Send message</button>
-      </form>
-      <script src="index.js"></script>
-    </section>
-    <footer>
-      <address>
-        500 Main, San Francisco, CA
-      </address>
-      Copyright 2019
-    </footer>
+          <button type="submit">Send Email</button>
+        </form>
+        <script src="index.js"></script>
+      </section>
+
+      <section>
+        <h2>Charts</h2>
+        <figure>
+          <img src="pie-chart.jpg" />
+          <figcaption class="sr-only">
+            Funny pie chart: Only Morgan Freeman likes his voice.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Avoid this - Some screen readers will ignore the aria-label if there's text available 
+    <div aria-label="These are screen reader user specific instructions.">These are instructions for everyone else.</div> -->
+
+      <div class="sr-only">
+        These are screen reader user specific instructions.
+      </div>
+      <div aria-hidden="true">These are instructions for everyone else.</div>
+
+      <footer>
+        <address>
+          500 Main, San Francisco, CA
+        </address>
+        Copyright 2019
+        <aside>
+          <a href="http://twitter.com/housecor">
+            <svg
+              aria-hidden="true"
+              aria-label="Follow housecor on Twitter"
+            ></svg>
+          </a>
+        </aside>
+      </footer>
+    </div>
   </body>
 </html>
