@@ -23,6 +23,20 @@ The commands above will install necessary dependencies, then start the app on yo
 - [Wave](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) accessibility evaluation tool for Chrome
 - [Siteimprove](https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc/related?hl=en-US)
 
+## Recommended Reading
+
+- 
+- [Aria Spec on W3](https://www.w3.org/TR/wai-aria-1.1/#intro_ria_accessibility)
+- [Aria Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
+- [Frontend Handbook](https://frontendmasters.com/books/front-end-handbook/2019/#4.14)
+- [Frontend Checklist](https://frontendchecklist.io)
+- [Marcy Sutton's Blog on Accessibility](https://marcysutton.com/)
+- [Accessibility in React Apps](https://www.aditus.io/talks/react-and-accessibility/)
+
+## Interested in Training?
+
+I offer on-site training and consulting on modern JavaScript and React at [reactjsconsulting.com](http://reactjsconsulting.com)
+
 ## Checklist
 
 ### Semantic markup
