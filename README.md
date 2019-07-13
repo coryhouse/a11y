@@ -25,9 +25,9 @@ The commands above will install necessary dependencies, then start the app on yo
 
 ## Recommended Reading
 
-- 
 - [Aria Spec on W3](https://www.w3.org/TR/wai-aria-1.1/#intro_ria_accessibility)
 - [Aria Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
+- [WebAIM](https://webaim.org/)
 - [Frontend Handbook](https://frontendmasters.com/books/front-end-handbook/2019/#4.14)
 - [Frontend Checklist](https://frontendchecklist.io)
 - [Marcy Sutton's Blog on Accessibility](https://marcysutton.com/)
