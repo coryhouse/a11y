@@ -4,6 +4,7 @@ Improving accessibility, by example
 
 ## Quick Start
 
+Install [Node](http://nodejs.org), then run the following on the command line:
 ```
 npm install
 npm start
