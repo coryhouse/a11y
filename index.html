@@ -17,11 +17,6 @@
         </ul>
       </nav>
 
-      <div>
-        <a href="/home">Home</a><br />
-        <a href="/contact">Contact</a><br />
-      </div>
-
       <header>
         <form>
           <img
@@ -34,11 +29,21 @@
         </form>
       </header>
 
-      <main id="main">
+      <main id="main" tabindex="-1">
         <h1>Inventory</h1>
 
+        To announce header for a cell:
+        <ol>
+          <li>
+            Cmd + ctrl + backslash while reading table cell to enter table mode.
+          </li>
+          <li>
+            Cmd + ctrl + T + H to announce current cell's headers.
+          </li>
+        </ol>
+
         <table>
-          <caption>
+          <caption class="sr-only">
             Vehicle Inventory
           </caption>
           <tr>
@@ -72,7 +77,6 @@
       <section>
         <form onsubmit="submit()">
           <h1>Contact Us</h1>
-          <div class="h1">Contact Us</div>
           <button onClick="endEmail()">Send</button>
           <label for="email">Email</label><br />
           <input
@@ -80,7 +84,6 @@
             id="email"
             required
             aria-errormessage="email-error"
-            aria-invalid="false"
             onblur="validate('email', 'Email')"
           />
           <p id="email-error" role="alert" class="error"></p>
@@ -90,7 +93,6 @@
             id="message"
             required
             aria-errormessage="message-error"
-            aria-invalid="false"
             onblur="validate('message', 'Message')"
           ></textarea>
           <p id="message-error" role="alert" class="error"></p>
@@ -106,7 +108,10 @@
       <section>
         <h2>Charts</h2>
         <figure>
-          <img src="pie-chart.jpg" />
+          <img
+            src="pie-chart.jpg"
+            alt="Funny pie chart: Only Morgan Freeman likes his voice."
+          />
           <figcaption class="sr-only">
             Funny pie chart: Only Morgan Freeman likes his voice.
           </figcaption>
@@ -127,11 +132,11 @@
         </address>
         Copyright 2019
         <aside>
-          <a href="http://twitter.com/housecor">
-            <svg
-              aria-hidden="true"
-              aria-label="Follow housecor on Twitter"
-            ></svg>
+          <a
+            href="http://twitter.com/housecor"
+            aria-label="Follow housecor on Twitter"
+          >
+            <svg aria-hidden="true"></svg>
           </a>
         </aside>
       </footer>
