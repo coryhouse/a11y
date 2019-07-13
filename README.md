@@ -11,6 +11,10 @@ npm start
 
 The commands above will install necessary dependencies, then start the app on your machine.
 
+## Slides
+
+[Slides from "Building Accessible Web Apps"](https://www.dropbox.com/s/ozpzgcutaal5h26/Building%20Accessible%20Web%20Apps.pptx?dl=0)
+
 ## A11y Tools
 
 - Chrome Audits tab (powered by [Lighthouse](https://developers.google.com/web/tools/lighthouse))
