@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <title>A11y demo</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
@@ -10,9 +10,9 @@
         <a href="#main">Skip to main content</a>
       </div>
       <nav>
-        <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/contact">Contact</a></li>
+        <ul class="nav">
+          <li><a href="/home" class="nav-link">Home</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
@@ -41,7 +41,7 @@
           </li>
         </ol>
 
-        <table>
+        <table class="table">
           <caption class="sr-only">
             Vehicle Inventory
           </caption>
@@ -76,7 +76,6 @@
       <section>
         <form onsubmit="submit()">
           <h1>Contact Us</h1>
-          <button onClick="endEmail()">Send</button>
           <label for="email">Email</label><br />
           <input
             type="text"
@@ -105,20 +104,12 @@
       </section>
 
       <section>
-        <h2>Charts</h2>
+        <h2>Silly Chart</h2>
         <figure>
-          <img
-            src="pie-chart.jpg"
-            alt="Funny pie chart: Only Morgan Freeman likes his voice."
-          />
-          <figcaption class="sr-only">
-            Funny pie chart: Only Morgan Freeman likes his voice.
-          </figcaption>
+          <img src="pie-chart.jpg" alt="Funny pie chart: Only Morgan Freeman
+          likes the sound of his voice."
         </figure>
       </section>
-
-      <!-- Avoid this - Some screen readers will ignore the aria-label if there's text available 
-    <div aria-label="These are screen reader user specific instructions.">These are instructions for everyone else.</div> -->
 
       <div class="sr-only">
         These are screen reader user specific instructions.
