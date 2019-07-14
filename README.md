@@ -33,12 +33,13 @@ The commands above will install necessary dependencies, then start the app on yo
 - [NVDA](https://www.nvaccess.org/download/)
 - VoiceOver - Built into Macs
 
-## Recommended Reading
+## Resources
 
 - [Learn HTML](https://www.w3schools.com/html/default.asp) including [new stuff in HTML5](https://www.w3schools.com/html/html5_intro.asp)
 - [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)
 - [WebAIM Checklist](https://webaim.org/standards/wcag/checklist) - A distilled version of WCAG guidelines
 - [Aria Spec on W3](https://www.w3.org/TR/wai-aria-1.1/#intro_ria_accessibility)
+- [Aria Authoring Practices Spec](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Accessibility Fundamentals from Google](https://developers.google.com/web/fundamentals/accessibility)
 - [In Browser ChromeVox Demo](http://udacity.github.io/ud891/lesson3-semantics-built-in/02-chromevox-lite/)
 - [Aria Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
