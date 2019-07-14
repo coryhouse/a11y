@@ -29,7 +29,8 @@ The commands above will install necessary dependencies, then start the app on yo
 ## Recommended Reading
 
 - [Learn HTML](https://www.w3schools.com/html/default.asp) including [new stuff in HTML5](https://www.w3schools.com/html/html5_intro.asp)
-- [WebAIM Checklist](https://webaim.org/standards/wcag/checklist)
+- [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)
+- [WebAIM Checklist](https://webaim.org/standards/wcag/checklist) - A distilled version of WCAG guidelines
 - [Aria Spec on W3](https://www.w3.org/TR/wai-aria-1.1/#intro_ria_accessibility)
 - [Aria Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
 - [Frontend Handbook](https://frontendmasters.com/books/front-end-handbook/2019/#4.14)
