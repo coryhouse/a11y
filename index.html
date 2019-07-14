@@ -1,9 +1,10 @@
-<html>
+<html lang="en">
   <head>
     <title>A11y demo</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
+
   <body>
     <div class="container-fluid">
       <div id="skip">
@@ -33,7 +34,43 @@
       <main id="main" tabindex="-1">
         <h2>Inventory</h2>
 
-      <div class="heading">Inventory</div>
+        <table class="table">
+          <caption class="sr-only">
+            Vehicle Inventory
+          </caption>
+          <tr>
+            <th scope="col">Id</th>
+            <td scope="col" aria-label="Image"></td>
+            <th scope="col">Make</th>
+            <th scope="col">Model</th>
+          </tr>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              <img src="img/s-thumb.png" alt="Gray Tesla Model S" />
+            </td>
+            <td>
+              Tesla
+            </td>
+            <th scope="row">
+              Model S
+            </th>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <img src="img/3-thumb.png" alt="Red Tesla Model 3" />
+            </td>
+            <td>
+              Tesla
+            </td>
+            <th scope="row">
+              Model 3
+            </th>
+          </tr>
+        </table>
 
         <section>
           <h2>Contact Us</h2>
@@ -51,34 +88,35 @@
               <p id="email-error" role="alert" class="error"></p>
             </div>
 
-      <section>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                class="form-control"
+                required
+                aria-errormessage="message-error"
+                onblur="validate('message', 'Message')"
+              ></textarea>
+              <p id="message-error" role="alert" class="error"></p>
+            </div>
 
-      <h2>Contact Us</h2>
-      <form>
-        <div class="form-group">
-          <label>Email</label>
-          <input type="text" class="form-control" id="email" required />
-          <p id="email-error" class="error"></p>
-        </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="subscribe" />
+              <label class="form-check-label" for="subscribe"
+                >Subscribe to mailing list</label
+              >
+            </div>
 
-        <div class="form-group">
-          <label>Message</label>
-          <textarea
-            id="message"
-            class="form-control"
-            required
-            onblur="validate('message', 'Message')"
-          ></textarea>
-          <p id="message-error" class="error"></p>
-        </div>
+            <button type="submit" class="btn btn-primary">Send Email</button>
+          </form>
+        </section>
 
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="subscribe" />
-          <label class="form-check-label">
-            Subscribe to mailing list
-          </label>
+        <div class="sr-only">
+          These are screen reader user specific instructions.
         </div>
-      </section>
+        <div aria-hidden="true">
+          These are instructions for everyone else.
+        </div>
 
         <section>
           <h2>Charts</h2>
@@ -91,10 +129,14 @@
         </section>
       </main>
 
-      <hr />
-      <a href="http://twitter.com/housecor">
-        <img src="img/twitter-icon.png" />
-      </a>
+      <footer>
+        <a
+          href="http://twitter.com/housecor"
+          aria-label="Follow housecor on Twitter"
+        >
+          <img src="img/twitter-icon.png" alt="Twitter icon" />
+        </a>
+      </footer>
     </div>
     <script src="index.js"></script>
   </body>
