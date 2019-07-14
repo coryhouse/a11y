@@ -1,4 +1,4 @@
-<html lang="en">
+<html>
   <head>
     <title>A11y demo</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
@@ -6,125 +6,91 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div id="skip">
-        <a href="#main">Skip to main content</a>
-      </div>
-      <nav>
-        <ul class="nav">
-          <li><a href="/home" class="nav-link">Home</a></li>
-          <li><a href="/contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+      <a href="/home" class="nav-link">Home</a> <a href="/contact" class="nav-link">Contact</a>
 
-      <header>
-        <form>
-          <input type="search" aria-label="Search this website" />
-          <button type="submit" aria-label="Submit Search">
-            <img
-              class="search"
-              src="img/search-icon.png"
-              alt="Magnifying glass icon"
-            />
-          </button>
-        </form>
-      </header>
+      <form>
+        <input type="text" />
+        <button type="submit">
+          <img class="search" src="img/search-icon.png" />
+        </button>
+      </form>
 
-      <main id="main" tabindex="-1">
-        <h1>Inventory</h1>
+        <div class="head">Inventory</div>
 
         <table class="table">
-          <caption class="sr-only">
-            Vehicle Inventory
-          </caption>
           <tr>
-            <th scope="col">Id</th>
-            <td scope="col" aria-label="Image"></td>
-            <th scope="col">Make</th>
-            <th scope="col">Model</th>
+            <th>Id</th>
+            <td></td>
+            <th>Make</th>
+            <th>Model</th>
           </tr>
           <tr>
             <td>
               1
             </td>
             <td>
-              <img src="img/s-thumb.png" alt="Gray Tesla Model S" />
+              <img src="img/s-thumb.png" />
             </td>
             <td>
               Tesla
             </td>
-            <th scope="row">
+            <td>
               Model S
-            </th>
+            </td>
           </tr>
           <tr>
             <td>2</td>
             <td>
-              <img src="img/3-thumb.png" alt="Red Tesla Model 3" />
+              <img src="img/3-thumb.png" />
             </td>
             <td>
               Tesla
             </td>
-            <th scope="row">
+            <td>
               Model 3
-            </th>
+            </td>
           </tr>
         </table>
 
-        <section>
-          <h1>Contact Us</h1>
-          <form onsubmit="submit()">
+          <div class="head">Contact Us</div>
+          <form>
             <div class="form-group">
-              <label for="email">Email</label><br />
+              <label>Email</label>
               <input
                 type="text"
                 class="form-control"
                 id="email"
                 required
-                aria-errormessage="email-error"
-                onblur="validate('email', 'Email')"
               />
-              <p id="email-error" role="alert" class="error"></p>
+              <p id="email-error" class="error"></p>
             </div>
 
             <div class="form-group">
-              <label for="message">Message</label><br />
+              <label>Message</label>
               <textarea
                 id="message"
                 class="form-control"
                 required
-                aria-errormessage="message-error"
                 onblur="validate('message', 'Message')"
               ></textarea>
-              <p id="message-error" role="alert" class="error"></p>
+              <p id="message-error" class="error"></p>
             </div>
 
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="subscribe" />
-              <label class="form-check-label" for="subscribe"
-                >Subscribe to mailing list</label
-              >
+              <label class="form-check-label">
+                Subscribe to mailing list
+              </label>
             </div>
 
-            <button type="submit" class="btn btn-primary">Send Email</button>
+            <button onclick="submit()" type="submit" class="btn btn-primary">Send Email</button>
           </form>
         </section>
-
-        <div class="sr-only">
-          These are screen reader user specific instructions.
-        </div>
-        <div aria-hidden="true">
-          These are instructions for everyone else.
-        </div>
       </main>
 
-      <footer>
-        <a
-          href="http://twitter.com/housecor"
-          aria-label="Follow housecor on Twitter"
-        >
-          <img src="img/twitter-icon.png" alt="Twitter icon" />
-        </a>
-      </footer>
+      <a href="http://twitter.com/housecor">
+        <img src="img/twitter-icon.png" />
+      </a>
     </div>
     <script src="index.js"></script>
   </body>

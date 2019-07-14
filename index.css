@@ -11,6 +11,11 @@ body {
   height: 24px;
 }
 
+.head {
+  font-weight: bold;
+  font-size: 2em;
+}
+
 .error {
   color: darkred;
 }
