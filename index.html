@@ -9,14 +9,15 @@
       <div id="skip">
         <a href="#main">Skip to main content</a>
       </div>
-      <nav>
-        <ul class="nav">
-          <li><a href="/home" class="nav-link">Home</a></li>
-          <li><a href="/contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-
       <header>
+        <h1>Accessibilty Demo</h1>
+        <nav>
+          <ul class="nav">
+            <li><a href="/home" class="nav-link">Home</a></li>
+            <li><a href="/contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
         <form>
           <input type="search" aria-label="Search this website" />
           <button type="submit" aria-label="Submit Search">
@@ -30,7 +31,7 @@
       </header>
 
       <main id="main" tabindex="-1">
-        <h1>Inventory</h1>
+        <h2>Inventory</h2>
 
         <table class="table">
           <caption class="sr-only">
@@ -71,7 +72,7 @@
         </table>
 
         <section>
-          <h1>Contact Us</h1>
+          <h2>Contact Us</h2>
           <form onsubmit="submit()">
             <div class="form-group">
               <label for="email">Email</label>
@@ -117,7 +118,7 @@
         </div>
 
         <section>
-          <h1>Charts</h1>
+          <h2>Charts</h2>
           <img
             src="img/pie.png"
             alt="Pie chart. Half of Pitbull's songs are him yelling oooeee!"
