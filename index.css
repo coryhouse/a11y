@@ -15,6 +15,10 @@ body {
   color: darkred;
 }
 
+th[scope="row"] {
+  font-weight: normal;
+}
+
 footer {
   border-top: solid 1px gray;
   margin-top: 8px;

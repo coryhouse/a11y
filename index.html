@@ -18,28 +18,19 @@
 
       <header>
         <form>
-          <img
-            class="search"
-            src="/search-icon.png"
-            alt="Magnifying glass icon"
-          />
           <input type="search" aria-label="Search this website" />
-          <button type="submit" aria-label="Submit Search">Go</button>
+          <button type="submit" aria-label="Submit Search">
+            <img
+              class="search"
+              src="img/search-icon.png"
+              alt="Magnifying glass icon"
+            />
+          </button>
         </form>
       </header>
 
       <main id="main" tabindex="-1">
         <h1>Inventory</h1>
-
-        To announce header for a cell:
-        <ol>
-          <li>
-            Cmd + ctrl + backslash while reading table cell to enter table mode.
-          </li>
-          <li>
-            Cmd + ctrl + T + H to announce current cell's headers.
-          </li>
-        </ol>
 
         <table class="table">
           <caption class="sr-only">
@@ -47,28 +38,35 @@
           </caption>
           <tr>
             <th scope="col">Id</th>
+            <th scope="col" aria-label="Image"></th>
             <th scope="col">Make</th>
             <th scope="col">Model</th>
           </tr>
           <tr>
-            <th scope="row">
+            <th>
               1
             </th>
             <td>
+              <img src="img/s-thumb.png" alt="Gray Tesla Model S" />
+            </td>
+            <td>
               Tesla
             </td>
-            <td>
+            <th scope="row">
               Model S
-            </td>
+            </th>
           </tr>
           <tr>
-            <th scope="row">2</th>
+            <th>2</th>
             <td>
-              Jaguar
+              <img src="img/3-thumb.png" alt="Red Tesla Model 3" />
             </td>
             <td>
-              X-type
+              Tesla
             </td>
+            <th scope="row">
+              Model 3
+            </th>
           </tr>
         </table>
       </main>
@@ -76,39 +74,40 @@
       <section>
         <form onsubmit="submit()">
           <h1>Contact Us</h1>
-          <label for="email">Email</label><br />
-          <input
-            type="text"
-            id="email"
-            required
-            aria-errormessage="email-error"
-            onblur="validate('email', 'Email')"
-          />
-          <p id="email-error" role="alert" class="error"></p>
+          <div class="form-group">
+            <label for="email">Email</label><br />
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              required
+              aria-errormessage="email-error"
+              onblur="validate('email', 'Email')"
+            />
+            <p id="email-error" role="alert" class="error"></p>
+          </div>
 
-          <label for="message">Message</label><br />
-          <textarea
-            id="message"
-            required
-            aria-errormessage="message-error"
-            onblur="validate('message', 'Message')"
-          ></textarea>
-          <p id="message-error" role="alert" class="error"></p>
+          <div class="form-group">
+            <label for="message">Message</label><br />
+            <textarea
+              id="message"
+              class="form-control"
+              required
+              aria-errormessage="message-error"
+              onblur="validate('message', 'Message')"
+            ></textarea>
+            <p id="message-error" role="alert" class="error"></p>
+          </div>
 
-          <label><input type="checkbox" /> Subscribe to mailing list</label
-          ><br />
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="subscribe" />
+            <label class="form-check-label" for="subscribe"
+              >Subscribe to mailing list</label
+            >
+          </div>
 
-          <button type="submit">Send Email</button>
+          <button type="submit" class="btn btn-primary">Send Email</button>
         </form>
-        <script src="index.js"></script>
-      </section>
-
-      <section>
-        <h2>Silly Chart</h2>
-        <figure>
-          <img src="pie-chart.jpg" alt="Funny pie chart: Only Morgan Freeman
-          likes the sound of his voice."
-        </figure>
       </section>
 
       <div class="sr-only">
@@ -117,19 +116,14 @@
       <div aria-hidden="true">These are instructions for everyone else.</div>
 
       <footer>
-        <address>
-          500 Main, San Francisco, CA
-        </address>
-        Copyright 2019
-        <aside>
-          <a
-            href="http://twitter.com/housecor"
-            aria-label="Follow housecor on Twitter"
-          >
-            <svg aria-hidden="true"></svg>
-          </a>
-        </aside>
+        <a
+          href="http://twitter.com/housecor"
+          aria-label="Follow housecor on Twitter"
+        >
+          <img src="img/twitter-icon.png" />
+        </a>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
