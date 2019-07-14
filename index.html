@@ -43,9 +43,9 @@
             <th scope="col">Model</th>
           </tr>
           <tr>
-            <th>
+            <td>
               1
-            </th>
+            </td>
             <td>
               <img src="img/s-thumb.png" alt="Gray Tesla Model S" />
             </td>
@@ -57,7 +57,7 @@
             </th>
           </tr>
           <tr>
-            <th>2</th>
+            <td>2</td>
             <td>
               <img src="img/3-thumb.png" alt="Red Tesla Model 3" />
             </td>
@@ -69,53 +69,53 @@
             </th>
           </tr>
         </table>
-      </main>
 
-      <section>
-        <form onsubmit="submit()">
+        <section>
           <h1>Contact Us</h1>
-          <div class="form-group">
-            <label for="email">Email</label><br />
-            <input
-              type="text"
-              class="form-control"
-              id="email"
-              required
-              aria-errormessage="email-error"
-              onblur="validate('email', 'Email')"
-            />
-            <p id="email-error" role="alert" class="error"></p>
-          </div>
+          <form onsubmit="submit()">
+            <div class="form-group">
+              <label for="email">Email</label><br />
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                required
+                aria-errormessage="email-error"
+                onblur="validate('email', 'Email')"
+              />
+              <p id="email-error" role="alert" class="error"></p>
+            </div>
 
-          <div class="form-group">
-            <label for="message">Message</label><br />
-            <textarea
-              id="message"
-              class="form-control"
-              required
-              aria-errormessage="message-error"
-              onblur="validate('message', 'Message')"
-            ></textarea>
-            <p id="message-error" role="alert" class="error"></p>
-          </div>
+            <div class="form-group">
+              <label for="message">Message</label><br />
+              <textarea
+                id="message"
+                class="form-control"
+                required
+                aria-errormessage="message-error"
+                onblur="validate('message', 'Message')"
+              ></textarea>
+              <p id="message-error" role="alert" class="error"></p>
+            </div>
 
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="subscribe" />
-            <label class="form-check-label" for="subscribe"
-              >Subscribe to mailing list</label
-            >
-          </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="subscribe" />
+              <label class="form-check-label" for="subscribe"
+                >Subscribe to mailing list</label
+              >
+            </div>
 
-          <button type="submit" class="btn btn-primary">Send Email</button>
-        </form>
-      </section>
+            <button type="submit" class="btn btn-primary">Send Email</button>
+          </form>
+        </section>
 
-      <div class="sr-only">
-        These are screen reader user specific instructions.
-      </div>
-      <div aria-hidden="true">
-        These are instructions for everyone else.
-      </div>
+        <div class="sr-only">
+          These are screen reader user specific instructions.
+        </div>
+        <div aria-hidden="true">
+          These are instructions for everyone else.
+        </div>
+      </main>
 
       <footer>
         <a
