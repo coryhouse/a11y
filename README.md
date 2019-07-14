@@ -1,10 +1,11 @@
-# a11y
+# Accessibility (a11y)
 
 Improving accessibility, by example
 
 ## Quick Start
 
 Install [Node](http://nodejs.org), then run the following on the command line:
+
 ```
 npm install
 npm start
@@ -66,10 +67,14 @@ I offer on-site training and consulting on modern JavaScript and React at [react
 
 - [ ] Tab from URl [should provide display link to skip to main content](https://dequeuniversity.com/rules/axe/3.2/skip-link?application=AxeChrome). (see Google.com as example)
 
-### Chromevox Commands
+### Chromevox Cheatsheet
+
+[Chromevox docs](https://www.chromevox.com/keyboard_shortcuts.html)
 
 Chromevox = `Ctrl+cmd` on Mac
 Chromvox + . = Show all commands and search box
-Navigate elements: `ChromeVox+arrows`
+Navigate elements: `Ctrl+cmd+arrows`
 
-- [ ] Use aria tags
+Announce table cell header:
+`Cmd+ctrl+backslash` while reading table cell to enter table mode.
+`Cmd+ctrl+T+H` to announce current cell's headers.
