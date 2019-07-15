@@ -41,6 +41,7 @@ The commands above will install necessary dependencies, then start the app on yo
 - [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)
 - [WebAIM Checklist](https://webaim.org/standards/wcag/checklist) - A distilled version of WCAG guidelines
 - [A11yCasts on YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
+- [Free Udacity Web Accessibility Course by Google](https://www.udacity.com/course/web-accessibility--ud891)
 - [Aria Spec on W3](https://www.w3.org/TR/wai-aria-1.1/#intro_ria_accessibility)
 - [Aria Authoring Practices Spec](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Accessibility Fundamentals from Google](https://developers.google.com/web/fundamentals/accessibility)
