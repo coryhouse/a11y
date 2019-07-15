@@ -29,16 +29,17 @@ The commands above will install necessary dependencies, then start the app on yo
 
 ## Screen Readers
 
-- [Jaws](https://www.freedomscientific.com/products/software/jaws/)
+- [NVDA](https://www.nvaccess.org/download/) - Free for Windows [Vid on usage](https://www.youtube.com/watch?v=Jao3s_CwdRU&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=4)
+- [VoiceOver](https://www.youtube.com/watch?v=5R-6WvAihms&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=6) - Built into Macs
 - [ChromeVox](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) for Chrome
-- [NVDA](https://www.nvaccess.org/download/)
-- VoiceOver - Built into Macs
+- [Jaws](https://www.freedomscientific.com/products/software/jaws/)
 
 ## Resources
 
 - [Learn HTML](https://www.w3schools.com/html/default.asp) including [new stuff in HTML5](https://www.w3schools.com/html/html5_intro.asp)
 - [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)
 - [WebAIM Checklist](https://webaim.org/standards/wcag/checklist) - A distilled version of WCAG guidelines
+- [A11yCasts on YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 - [Aria Spec on W3](https://www.w3.org/TR/wai-aria-1.1/#intro_ria_accessibility)
 - [Aria Authoring Practices Spec](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Accessibility Fundamentals from Google](https://developers.google.com/web/fundamentals/accessibility)
