@@ -25,6 +25,7 @@ The commands above will install necessary dependencies, then start the app on yo
 - [Siteimprove](https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc/related?hl=en-US)
 - [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd)
 - [Testing Library](https://testing-library.com/) - Encourages writing accessible apps by writing tests that mimic how user's interact.
+- [ESLint A11y plugin](https://github.com/evcohen/eslint-plugin-jsx-a11y)
 
 ## Screen Readers
 
