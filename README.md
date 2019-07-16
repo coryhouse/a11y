@@ -27,6 +27,7 @@ The commands above will install necessary dependencies, then start the app on yo
 - [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd)
 - [Color contrast checker](https://webaim.org/resources/contrastchecker/)
 - [Testing Library](https://testing-library.com/) - Encourages writing accessible apps by writing tests that mimic how user's interact.
+- [ESLint A11y plugin](https://github.com/evcohen/eslint-plugin-jsx-a11y)
 
 ## Screen Readers
 
@@ -52,18 +53,18 @@ The commands above will install necessary dependencies, then start the app on yo
 - [Marcy Sutton's Blog on Accessibility](https://marcysutton.com/)
 - [Accessibility in React Apps](https://www.aditus.io/talks/react-and-accessibility/)
 
-## Interested in Training?
+## Training
 
-I offer on-site training and consulting on JavaScript and React at [reactjsconsulting.com](http://reactjsconsulting.com)
+I offer on-site training and consulting on JavaScript and React at [reactjsconsulting.com](http://reactjsconsulting.com).
 
 ### Chromevox Cheatsheet
 
 [Chromevox docs](https://www.chromevox.com/keyboard_shortcuts.html)
 
-Chromevox = `Ctrl+cmd` on Mac
-Chromvox + . = Show all commands and search box
-Navigate elements: `Ctrl+cmd+arrows`
+- Chromevox = `Ctrl+cmd` on Mac
+- Chromvox + . = Show all commands and search box
+- Navigate elements: `Ctrl+cmd+arrows`
 
 Announce table cell header:
-`Cmd+ctrl+backslash` while reading table cell to enter table mode.
-`Cmd+ctrl+T+H` to announce current cell's headers.
+- `Cmd+ctrl+backslash` while reading table cell to enter table mode.
+- `Cmd+ctrl+T+H` to announce current cell's headers.
