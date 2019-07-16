@@ -21,24 +21,28 @@ The commands above will install necessary dependencies, then start the app on yo
 
 - Chrome Audits tab (powered by [Lighthouse](https://developers.google.com/web/tools/lighthouse))
 - [Axe](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) accessibility checker Chrome extension
+- [Axe Core CLI](https://github.com/dequelabs/axe-core) Axe CLI - Useful for CI.
 - [Wave](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) accessibility evaluation tool for Chrome
 - [Siteimprove](https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc/related?hl=en-US)
 - [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd)
+- [Color contrast checker](https://webaim.org/resources/contrastchecker/)
 - [Testing Library](https://testing-library.com/) - Encourages writing accessible apps by writing tests that mimic how user's interact.
 - [ESLint A11y plugin](https://github.com/evcohen/eslint-plugin-jsx-a11y)
 
 ## Screen Readers
 
-- [Jaws](https://www.freedomscientific.com/products/software/jaws/)
+- [NVDA](https://www.nvaccess.org/download/) - Free for Windows [Vid on usage](https://www.youtube.com/watch?v=Jao3s_CwdRU&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=4)
+- [VoiceOver](https://www.youtube.com/watch?v=5R-6WvAihms&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=6) - Built into Macs
 - [ChromeVox](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) for Chrome
-- [NVDA](https://www.nvaccess.org/download/)
-- VoiceOver - Built into Macs
+- [Jaws](https://www.freedomscientific.com/products/software/jaws/)
 
 ## Resources
 
 - [Learn HTML](https://www.w3schools.com/html/default.asp) including [new stuff in HTML5](https://www.w3schools.com/html/html5_intro.asp)
 - [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)
 - [WebAIM Checklist](https://webaim.org/standards/wcag/checklist) - A distilled version of WCAG guidelines
+- [A11yCasts on YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
+- [Free Udacity Web Accessibility Course by Google](https://www.udacity.com/course/web-accessibility--ud891)
 - [Aria Spec on W3](https://www.w3.org/TR/wai-aria-1.1/#intro_ria_accessibility)
 - [Aria Authoring Practices Spec](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Accessibility Fundamentals from Google](https://developers.google.com/web/fundamentals/accessibility)
