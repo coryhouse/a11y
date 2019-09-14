@@ -13,6 +13,8 @@ npm start
 
 The commands above will install necessary dependencies, then start the app on your machine.
 
+The master branch contains an app with **bad** accessibility. Checkout the `fixed` branch to try the app with improved accessibility. Use the screen readers below to see the huge difference.
+
 ## Slides
 
 [Slides from "Building Accessible Web Apps"](https://www.dropbox.com/s/ozpzgcutaal5h26/Building%20Accessible%20Web%20Apps.pptx?dl=0)
