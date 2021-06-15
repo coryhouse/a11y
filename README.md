@@ -19,6 +19,12 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 
 [Slides from "Building Accessible Web Apps"](https://www.dropbox.com/s/ozpzgcutaal5h26/Building%20Accessible%20Web%20Apps.pptx?dl=0)
 
+## Random Tips
+
+1. The first rule of ARIA: Don't use ARIA. Consider it a last resort. Start with semantic HTML.
+2. Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
+3. For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
+
 ## A11y Tools
 
 - Chrome Audits tab (powered by [Lighthouse](https://developers.google.com/web/tools/lighthouse))
@@ -56,10 +62,11 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [Frontend Checklist](https://frontendchecklist.io)
 - [Marcy Sutton's Blog on Accessibility](https://marcysutton.com/)
 - [Accessibility in React Apps](https://www.aditus.io/talks/react-and-accessibility/)
+- [Video of someone using a screenreader on multiple sites](https://www.youtube.com/watch?v=OUDV1gqs9GA&t=11s)
 
 ## Training
 
-I offer on-site training and consulting on JavaScript and React at [reactjsconsulting.com](http://reactjsconsulting.com).
+I offer on-site training and consulting on JavaScript, React, and accessibility at [reactjsconsulting.com](http://reactjsconsulting.com).
 
 ### Chromevox Cheatsheet
 
