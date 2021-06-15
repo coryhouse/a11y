@@ -24,6 +24,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 1. The first rule of ARIA: Don't use ARIA. Consider it a last resort. Start with semantic HTML.
 2. Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
 3. For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
+4. Announce when something is expanded or collapsed.
 
 ## A11y Tools
 
