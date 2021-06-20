@@ -19,12 +19,13 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 
 [Slides from "Building Accessible Web Apps"](https://www.dropbox.com/s/ozpzgcutaal5h26/Building%20Accessible%20Web%20Apps.pptx?dl=0)
 
-## Random Tips
+## A11y Tips
 
 1. The first rule of ARIA: Don't use ARIA. Consider it a last resort. Start with semantic HTML.
-2. Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
-3. For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
-4. Announce when something is expanded or collapsed.
+2. "Shift a11y left" - Design in a11y from the start. Don't merely put the onus on developers. Designers should design for a11y.
+3. Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
+4. For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
+5. Announce when something is expanded or collapsed.
 
 ## A11y Tools
 
