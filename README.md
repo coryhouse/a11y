@@ -21,11 +21,16 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 
 ## A11y Tips
 
-1. The first rule of ARIA: Don't use ARIA. Consider it a last resort. Start with semantic HTML.
-2. "Shift a11y left" - Design in a11y from the start. Don't merely put the onus on developers. Designers should design for a11y.
-3. Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
-4. For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
-5. Announce when something is expanded or collapsed.
+- The first rule of ARIA: Don't use ARIA. Consider it a last resort. Start with semantic HTML.
+- "Shift a11y left" - Design in a11y from the start. Don't merely put the onus on developers. Designers should design for a11y. Examples:
+  - Anything a mouse can do, a keyboard user needs to be able to do.
+  - Figma tools like [Stark](https://www.figma.com/community/plugin/732603254453395948/Stark) and [A11y Annotation Kit](https://www.figma.com/community/file/953682768192596304) allow designers to convey a11y info.
+  - Visual treatments should have sufficient contrast and not rely upon color alone. Use [WCAG contrast checker](https://webaim.org/resources/contrastchecker/)
+- Semantic HTML is the foundation. Use the tag that's designed for the job. Avoid creating custom components when a native one exists.
+- Be deliberate and careful with motion. Check [prefers-reduced-motion](https://tatianamac.com/posts/prefers-reduced-motion/?ck_subscriber_id=1319725958) and minimize motion if set.
+- Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
+- For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
+- Announce when something is expanded or collapsed.
 
 ## A11y Tools
 
