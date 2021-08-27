@@ -93,3 +93,7 @@ I offer on-site training and consulting on JavaScript, React, and accessibility 
 Announce table cell header:
 - `Cmd+ctrl+backslash` while reading table cell to enter table mode.
 - `Cmd+ctrl+T+H` to announce current cell's headers.
+
+### Voiceover Cheatsheet
+
+Rotor: VO+U, then use left/right arrows to shift between
