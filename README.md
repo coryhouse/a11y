@@ -82,7 +82,7 @@ These sites contain UI components that are focused on a11y. Good to use as found
 
 I offer on-site training and consulting on JavaScript, React, and accessibility at [reactjsconsulting.com](http://reactjsconsulting.com).
 
-### Chromevox Cheatsheet
+### Chrome Screen Reader Extension (formerly called Chromevox) Cheatsheet
 
 [Chromevox docs](https://www.chromevox.com/keyboard_shortcuts.html)
 
