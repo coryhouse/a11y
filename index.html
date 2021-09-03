@@ -68,14 +68,17 @@
           <form onsubmit="submit()">
             <div class="form-group">
               <label for="email">Email</label>
+              <!-- The autocomplete="email" below tells the browser to autocomplete this field 
+                with the user's email, if the browser knows it. -->
               <input
-                type="text"
                 autocomplete="email"
+                type="text"
                 class="form-control"
                 id="email"
                 required
                 aria-errormessage="email-error"
-                onblur="validate('email', 'Email')"
+                onblur="validate('email',
+              'Email')"
               />
               <p id="email-error" role="alert" class="error"></p>
             </div>
