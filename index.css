@@ -30,6 +30,11 @@ footer {
   font-size: 2em;
 }
 
+h1,
+h2 {
+  margin-top: 55px;
+}
+
 /* Show skip link when user hits tab from address bar. Is hidden visually otherwise, 
 but accessible to screen readers.
 /* via https://dequeuniversity.com/rules/axe/3.2/skip-link?application=AxeChrome */
