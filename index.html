@@ -41,8 +41,13 @@
             Vehicle Inventory
           </caption>
           <tr>
-            <th scope="col">Id</th>
-            <td scope="col" aria-label="Image"></td>
+            <th scope="col">
+              <span aria-hidden="true">Id</span>
+              <!-- Providing more descriptive column name for screenreader only -->
+              <span class="sr-only">Vehicle ID</span>
+            </th>
+            <!-- using sr-only since we don't need the heading for sighted users, and Voiceover screenreader ignores aria-label on an empty th. It reads the children content.-->
+            <th scope="col"><span class="sr-only">Vehicle image</span></th>
             <th scope="col">Make</th>
             <th scope="col">Model</th>
           </tr>
