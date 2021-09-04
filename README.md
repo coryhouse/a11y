@@ -40,7 +40,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Are required fields marked?
 - [ ] Is Navigation well-named?
 - [ ] Is the markup semantic?
-- [ ] Are useful landmarks displayed in the rotor? (Are roles applied when relevant?)
+- [ ] Are useful landmarks displayed in the rotor? (Use good semantic markup, and apply roles when semantic markup isn't possible/sufficient)
 
 ## A11y Tools
 
