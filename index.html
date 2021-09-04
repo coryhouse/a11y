@@ -114,10 +114,31 @@
           </form>
         </section>
 
-        <div class="sr-only">
-          These are screen reader user specific instructions.
-        </div>
-        <div aria-hidden="true">These are instructions for everyone else.</div>
+        <article>
+          <h2 class="heading">Blog post: Web developers overuse divs</h2>
+          <p>
+            The solution:
+            <a
+              href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf"
+              >Use more semantic alternatives.</a
+            >
+          </p>
+
+          <section>
+            <h3 aria-label="Blog comments">Comments</h3>
+            <div role="comment" id="thread-1" data-author="chris">
+              <h4 aria-label="Comment by Cory House on March 30, 2021">
+                Cory House said
+              </h4>
+              <p class="comment-text">This blog post is awfully short.</p>
+              <p>
+                <time datetime="2021-03-30T19:29"
+                  ><span aria-hidden="true">March 30 2021, 19:29</span></time
+                >
+              </p>
+            </div>
+          </section>
+        </article>
 
         <!-- This doesn't contain a header by design. Instead, using an aria-label per https://www.w3.org/WAI/GL/wiki/Using_HTML5_section_element#Example_2:_Structuring_HTML5_content_with_ARIA_and_the_.3Csection.3E_element -->
         <aside aria-label="Funny chart">
@@ -128,17 +149,6 @@
             alt="Pie chart. Half of Pitbull's songs are him yelling OOOEEEEIII!"
           />
         </aside>
-
-        <article>
-          <h2 class="heading">Blog post: Web developers overuse divs</h2>
-          <p>
-            The solution:
-            <a
-              href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf"
-              >Use more semantic alternatives.</a
-            >
-          </p>
-        </article>
       </main>
 
       <footer>
