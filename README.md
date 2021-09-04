@@ -43,7 +43,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Is Navigation well-named?
 - [ ] Is the markup semantic? Does it use the most specific tag possible. 
 - [ ] Search the code: Where is `role` used? Could a semantic tag be used instead?
-- [ ] Are useful landmarks displayed in the rotor? (Use good semantic markup, and apply roles when semantic markup isn't possible/sufficient)
+- [ ] Are useful [landmarks](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#landmark_roles) displayed in the rotor? (Use good semantic markup, and apply roles when semantic markup isn't possible/sufficient)
 - [ ] Are buttons and anchors being used as intended? [They operate differently](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#accessibility_concerns). (search code for these tags to focus audit) 
 
 ## A11y Tools
