@@ -31,6 +31,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
 - For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
 - Announce when something is expanded or collapsed.
+- Avoid spelling phonetically because Braille readers get confused. Screen reader users are used to words being mispronounced.
 
 ## A11y Audit Checklist
 
