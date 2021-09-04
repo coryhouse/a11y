@@ -37,6 +37,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
   - [feed](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Feed_Role)
   - [img](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Role_Img) (for grouping separate images together for a shared description) 
   - [search](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Search_role) - Apply to search input's `form` tag
+  - [switch](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role) - For 2 on/off states, like a more specific checkbox.
 - Be deliberate and careful with motion. Check [prefers-reduced-motion](https://tatianamac.com/posts/prefers-reduced-motion/?ck_subscriber_id=1319725958) and minimize motion if set.
 - Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
 - For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
