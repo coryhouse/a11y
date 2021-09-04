@@ -33,7 +33,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
   - `section` has role="region"
   - `footer` has role="complimentary", 
   - `header` has role="banner" (when not nested under `aside`, `article`, `main`, `nav`, or `section`.) (and yes, `header`/`footer` can be used elsewhere in the page to mark up headers footers for sections too. 
-  - Notable roles that don't have a tag equivalent: 
+- The most broadly useful roles (because they don't have a tag equivalent): 
   - [feed](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Feed_Role)
   - [img](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Role_Img) (for grouping separate images together for a shared description), 
   - [search](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Search_role)
