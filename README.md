@@ -32,6 +32,16 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
 - Announce when something is expanded or collapsed.
 
+## A11y Audit Checklist
+
+- [ ] Is first tab "skip to main content"?
+- [ ] Are form labels tied to the input?
+- [ ] Are form errors announced immediately, and marked as errors?
+- [ ] Are required fields marked?
+- [ ] Is Navigation well-named?
+- [ ] Is the markup semantic?
+- [ ] Are useful landmarks displayed in the rotor? (Are roles applied when relevant?)
+
 ## A11y Tools
 
 - Chrome Audits tab (powered by [Lighthouse](https://developers.google.com/web/tools/lighthouse))
