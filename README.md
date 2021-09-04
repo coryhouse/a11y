@@ -26,7 +26,8 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
   - Anything a mouse can do, a keyboard user needs to be able to do.
   - Figma tools like [Stark](https://www.figma.com/community/plugin/732603254453395948/Stark) and [A11y Annotation Kit](https://www.figma.com/community/file/953682768192596304) allow designers to convey a11y info.
   - Visual treatments should have sufficient contrast and not rely upon color alone. Use [WCAG contrast checker](https://webaim.org/resources/contrastchecker/)
-- Semantic HTML is the foundation. Use the tag that's designed for the job. Avoid creating custom components when a native one exists.
+- Semantic HTML is the foundation. [div or span is a last resort](https://twitter.com/housecor/status/1434168409072324610). Use the tag that's designed for the job. Avoid creating custom components when a native one exists.
+- Role is a last resort. Again, prefer a specific tag first. `button` has role="button". `header` (when not nested) has role="banner"
 - Be deliberate and careful with motion. Check [prefers-reduced-motion](https://tatianamac.com/posts/prefers-reduced-motion/?ck_subscriber_id=1319725958) and minimize motion if set.
 - Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
 - For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
@@ -40,7 +41,8 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Are form errors announced immediately, and marked as errors?
 - [ ] Are required fields marked?
 - [ ] Is Navigation well-named?
-- [ ] Is the markup semantic?
+- [ ] Is the markup semantic? Does it use the most specific tag possible. 
+- [ ] Search the code: Where is `role` used? Could a semantic tag be used instead?
 - [ ] Are useful landmarks displayed in the rotor? (Use good semantic markup, and apply roles when semantic markup isn't possible/sufficient)
 
 ## A11y Tools
