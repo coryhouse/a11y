@@ -34,40 +34,49 @@
       </header>
 
       <main id="main" tabindex="-1">
-        <h2>Inventory</h2>
+        <section>
+          <h2>Inventory</h2>
 
-        <table class="table" aria-rowcount="2">
-          <caption class="sr-only">
-            Vehicle Inventory
-          </caption>
-          <tr>
-            <th scope="col">
-              <span aria-hidden="true">Id</span>
-              <!-- Providing more descriptive column name for screenreader only -->
-              <span class="sr-only">Vehicle ID</span>
-            </th>
-            <!-- using sr-only since we don't need the heading for sighted users, and Voiceover screenreader ignores aria-label on an empty th. It reads the children content.-->
-            <th scope="col"><span class="sr-only">Vehicle image</span></th>
-            <th scope="col">Make</th>
-            <th scope="col">Model</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>
-              <img src="img/s-thumb.png" alt="Gray Tesla Model S" />
-            </td>
-            <td>Tesla</td>
-            <th scope="row">Model S</th>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>
-              <img src="img/3-thumb.png" alt="Red Tesla Model 3" />
-            </td>
-            <td>Tesla</td>
-            <th scope="row">Model 3</th>
-          </tr>
-        </table>
+          <table
+            class="table"
+            aria-rowcount="2"
+            aria-labelledby="vehicle-table-caption"
+          >
+            <caption id="vehicle-table-caption" class="sr-only">
+              Vehicle Inventory
+            </caption>
+            <tr>
+              <th scope="col">
+                <span aria-hidden="true">Id</span>
+                <!-- Providing more descriptive column name for screenreader only -->
+                <span class="sr-only">Vehicle ID</span>
+              </th>
+              <!-- using sr-only since we don't need the heading for sighted users, and Voiceover screenreader ignores aria-label on an empty th. It reads the children content.-->
+              <th scope="col"><span class="sr-only">Vehicle image</span></th>
+              <th scope="col">Make</th>
+              <th scope="col">Model</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <img src="img/s-thumb.png" alt="Gray Tesla Model S" />
+              </td>
+              <td>Tesla</td>
+              <th scope="row">Model S</th>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <img src="img/3-thumb.png" alt="Red Tesla Model 3" />
+              </td>
+              <td>Tesla</td>
+              <th scope="row">Model 3</th>
+            </tr>
+          </table>
+
+          <!-- Set aria-busy to true when content is loading or isn't ready yet so screenreader can skip it. -->
+          <aside aria-busy="true">Loading vehicles near you...</aside>
+        </section>
 
         <section>
           <h2>Contact Us</h2>
