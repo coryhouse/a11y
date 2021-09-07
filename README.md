@@ -26,7 +26,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
   - Anything a mouse can do, a keyboard user needs to be able to do.
   - Figma tools like [Stark](https://www.figma.com/community/plugin/732603254453395948/Stark) and [A11y Annotation Kit](https://www.figma.com/community/file/953682768192596304) allow designers to convey a11y info.
   - Visual treatments should have sufficient contrast and not rely upon color alone. Use [WCAG contrast checker](https://webaim.org/resources/contrastchecker/)
-- Semantic HTML is the foundation. [div or span is a last resort](https://twitter.com/housecor/status/1434168409072324610). Use the tag that's designed for the job. Avoid creating custom components when a native one exists.
+- Semantic HTML is the foundation. [div or span is a last resort](https://twitter.com/housecor/status/1434168409072324610). Use the tag that's designed for the job. Avoid creating custom elements when a native one exists. [Here's an example where a custom element was useful](https://giuseppegurgone.com/twitter-html/?ck_subscriber_id=193063445)
 - Role is a last resort. Again, prefer a specific tag first. 
   - `h1` has a role="heading
   - `button` has role="button"
