@@ -22,11 +22,13 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 ## A11y Tips
 
 - The first rule of ARIA: Don't use ARIA. Consider it a last resort. Start with semantic HTML.
+- Read the other [rules of ARIA](https://www.w3.org/TR/using-aria/#intro)
 - "Shift a11y left" - Design in a11y from the start. Don't merely put the onus on developers. Designers should design for a11y. Examples:
   - Anything a mouse can do, a keyboard user needs to be able to do.
   - Figma tools like [Stark](https://www.figma.com/community/plugin/732603254453395948/Stark) and [A11y Annotation Kit](https://www.figma.com/community/file/953682768192596304) allow designers to convey a11y info.
   - Visual treatments should have sufficient contrast and not rely upon color alone. Use [WCAG contrast checker](https://webaim.org/resources/contrastchecker/)
 - Semantic HTML is the foundation. [div or span is a last resort](https://twitter.com/housecor/status/1434168409072324610). Use the tag that's designed for the job. Avoid creating custom elements when a native one exists. [Here's an example where a custom element was useful](https://giuseppegurgone.com/twitter-html/?ck_subscriber_id=193063445)
+- aria-label is basically [only for interactive and landmark elements](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute#support).
 - Role is a last resort. Again, prefer a specific tag first. 
   - `h1` has a role="heading
   - `button` has role="button"
@@ -106,6 +108,11 @@ These sites contain UI components that are focused on a11y. Good to use as found
 ## Training
 
 I offer on-site training and consulting on JavaScript, React, and accessibility at [reactjsconsulting.com](http://reactjsconsulting.com).
+
+### NVDA Cheatsheet
+
+- I prefer configuring it to use the Caps Lock key as the NVDA key.
+- NVDA+n activates the NVDA menu
 
 ### Chrome Screen Reader Extension (formerly called Chromevox) Cheatsheet
 
