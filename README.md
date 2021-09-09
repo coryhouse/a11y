@@ -46,6 +46,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
 - Announce when something is expanded or collapsed.
 - Avoid spelling phonetically because Braille readers get confused. Screen reader users are used to words being mispronounced.
+- Set the tabindex=-1 to convey that something can only be focused via a func call. Useful for headers that you want to focus programmatically when an anchor is clicked.
 
 ## A11y Audit Checklist
 
@@ -54,6 +55,8 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Are form errors announced immediately, and marked as errors?
 - [ ] Are required fields marked?
 - [ ] Is Navigation well-named?
+- [ ] Can I navigate the app via the keyboard and always see what is focused?
+- [ ] When I click on a link, does it focus the proper item? If I click an anchor, does it focus the heading?
 - [ ] Is the markup semantic? Does it use the most specific tag possible. 
 - [ ] Search the code: Where is `role` used? Could a semantic tag be used instead?
 - [ ] Are useful [landmarks](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#landmark_roles) displayed in the rotor? (Use good semantic markup, and apply roles when semantic markup isn't possible/sufficient)
