@@ -76,6 +76,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [Testing Library](https://testing-library.com/) - Encourages writing accessible apps by writing tests that mimic how user's interact.
 - [ESLint A11y plugin](https://github.com/evcohen/eslint-plugin-jsx-a11y)
 - [Pa11y](https://pa11y.org/) - Run a11y checks on your CI server
+- [Complete Guide to a11y tooling](https://www.smashingmagazine.com/2021/06/complete-guide-accessibility-tooling/)
 
 ## Accessible UI Components
 
