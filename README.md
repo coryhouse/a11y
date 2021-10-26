@@ -62,6 +62,18 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Are useful [landmarks](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#landmark_roles) displayed in the rotor? (Use good semantic markup, and apply roles when semantic markup isn't possible/sufficient)
 - [ ] Are buttons and anchors being used as intended? [They operate differently](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#accessibility_concerns). (search code for these tags to focus audit) 
 
+## A General Audit Workflow (h/t to Marcy Sutton)
+
+1. Make sure things are rendered in the browser as expected.
+1. Try navigating the site with only my keyboard, taking note of what does and doesn't work.
+1. Scan the page with developer tools (Accessibility Insights is one of my go-tos).
+1. Take note of how screen readers behave on Mac, Windows, and even mobile devices & emulators.
+1. Zoom in and out and watch for how content reacts.
+
+Once I've got a list of things that need addressed from the user side of things, I start in on the code. I often start conversations with Creative/Design teams as well to prevent accessibility issues earlier in the software development lifecycle.
+
+As I dive in to fix accessibility problems with code, I prioritize them based on user impact and the Web Content Accessibility Guidelines. I aim to fix things one viewport size at a time, though it's important to double check that changes in one place don't have an effect on others.
+
 ## A11y Tools
 
 - Chrome Audits tab (powered by [Lighthouse](https://developers.google.com/web/tools/lighthouse))
@@ -82,18 +94,6 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 
 These sites contain UI components that are focused on a11y. Good to use as foundations or as inspiration.
 - [digitala11y](https://www.digitala11y.com/accessible-ui-component-libraries-roundup/?ck_subscriber_id=1319725958)
-
-## A General Audit Workflow (h/t to Marcy Sutton)
-
-1. Make sure things are rendered in the browser as expected.
-1. Try navigating the site with only my keyboard, taking note of what does and doesn't work.
-1. Scan the page with developer tools (Accessibility Insights is one of my go-tos).
-1. Take note of how screen readers behave on Mac, Windows, and even mobile devices & emulators.
-1. Zoom in and out and watch for how content reacts.
-
-Once I've got a list of things that need addressed from the user side of things, I start in on the code. I often start conversations with Creative/Design teams as well to prevent accessibility issues earlier in the software development lifecycle.
-
-As I dive in to fix accessibility problems with code, I prioritize them based on user impact and the Web Content Accessibility Guidelines. I aim to fix things one viewport size at a time, though it's important to double check that changes in one place don't have an effect on others.
 
 ## Screen Readers
 
