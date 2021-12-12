@@ -107,6 +107,7 @@ These sites contain UI components that are focused on a11y. Good to use as found
 - [Learn HTML](https://www.w3schools.com/html/default.asp) including [new stuff in HTML5](https://www.w3schools.com/html/html5_intro.asp)
 - [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)
 - [WebAIM Checklist](https://webaim.org/standards/wcag/checklist) - A distilled version of WCAG guidelines
+- [Accessible Routing](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/)
 - [18f accessibility guide](https://accessibility.18f.gov/)
 - [A11yCasts on YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 - [Free Udacity Web Accessibility Course by Google](https://www.udacity.com/course/web-accessibility--ud891)
