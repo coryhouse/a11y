@@ -57,6 +57,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Are form errors announced immediately, and marked as errors?
 - [ ] Are required fields marked?
 - [ ] Is Navigation well-named?
+- [ ] [Is `aria-current` being used to mark and style active links](https://twitter.com/housecor/status/1476910306702077954)?
 - [ ] Can I navigate the app via the keyboard in a logical order? Can I always see what is focused? (use inert for invisible, rendered elements)
 - [ ] When I click on a link, does it focus the proper item? If I click an anchor, does it focus the heading?
 - [ ] Is the markup semantic? Does it use the most specific tag possible. 
