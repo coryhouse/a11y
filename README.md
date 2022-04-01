@@ -57,6 +57,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Are form errors announced immediately, and marked as errors?
 - [ ] Are required fields marked?
 - [ ] Is Navigation well-named?
+- [ ] Is the HTML lang tag set when the language changes?
 - [ ] [Is `aria-current` being used to mark and style active links](https://twitter.com/housecor/status/1476910306702077954)?
 - [ ] Can I navigate the app via the keyboard in a logical order? Can I always see what is focused? (use inert for invisible, rendered elements)
 - [ ] Is the [input type specified as specific as possible](https://twitter.com/mgechev/status/1483673112856219649?s=27)? 
