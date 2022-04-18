@@ -55,7 +55,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Is first tab "skip to main content"?
 - [ ] Are form labels tied to the input?
 - [ ] Are form errors announced immediately, and marked as errors?
-- [ ] Are required fields marked?
+- [ ] Are required fields marked via `aria-required` (or the required attribute if you want native behavior)?
 - [ ] Is Navigation well-named?
 - [ ] Is the HTML lang tag set when the language changes?
 - [ ] Is [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) set on the relevant form fields?
