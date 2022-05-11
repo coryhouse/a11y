@@ -9,14 +9,16 @@ function submit() {
 }
 
 function validate(id, label) {
+  const input = document.getElementById(id);
   const error = document.getElementById(id + "-error");
   if (document.getElementById(id).value) {
+    // Clear previous errors, since it's valid
     error.innerHTML = "";
-    error.setAttribute("aria-invalid", "false");
+    input.setAttribute("aria-invalid", "false");
     error.setAttribute("aria-role", "alert");
   } else {
     error.innerHTML = label + " required.";
-    error.setAttribute("aria-invalid", "true");
+    input.setAttribute("aria-invalid", "true");
     error.removeAttribute("aria-role");
   }
 }
