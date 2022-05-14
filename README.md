@@ -115,6 +115,7 @@ These sites contain UI components that are focused on a11y. Good to use as found
 ## Resources
 
 - [Learn HTML](https://www.w3schools.com/html/default.asp) including [new stuff in HTML5](https://www.w3schools.com/html/html5_intro.asp)
+- [Check for screenreader accessibility support for specific features](https://a11ysupport.io)
 - [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)
 - [WebAIM Checklist](https://webaim.org/standards/wcag/checklist) - A distilled version of WCAG guidelines
 - [Accessible Routing](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/)
