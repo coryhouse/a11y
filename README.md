@@ -29,15 +29,15 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
   - Visual treatments should have sufficient contrast and not rely upon color alone. Use [WCAG contrast checker](https://webaim.org/resources/contrastchecker/)
 - Semantic HTML is the foundation. [div or span is a last resort](https://twitter.com/housecor/status/1434168409072324610). Use the tag that's designed for the job. Avoid creating custom elements when a native one exists. [Here's an example where a custom element was useful](https://giuseppegurgone.com/twitter-html/?ck_subscriber_id=193063445)
 - aria-label is basically [only for interactive and landmark elements](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute#support).
-- Role is a last resort. Again, prefer a specific tag first. 
+- Role is a last resort. Again, prefer a specific tag first.
   - `h1` has a role="heading
   - `button` has role="button"
   - `section` has role="region"
-  - `footer` has role="complimentary", 
-  - `header` has role="banner" (when not nested under `aside`, `article`, `main`, `nav`, or `section`.) (and yes, `header`/`footer` can be used elsewhere in the page to mark up headers footers for sections too. 
-- The most broadly useful roles (because they don't have an HTML tag equivalent): 
+  - `footer` has role="complimentary",
+  - `header` has role="banner" (when not nested under `aside`, `article`, `main`, `nav`, or `section`.) (and yes, `header`/`footer` can be used elsewhere in the page to mark up headers footers for sections too.
+- The most broadly useful roles (because they don't have an HTML tag equivalent):
   - [feed](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Feed_Role)
-  - [img](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Role_Img) (for grouping separate images together for a shared description) 
+  - [img](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Role_Img) (for grouping separate images together for a shared description)
   - [search](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Search_role) - Apply to search input's `form` tag
   - [switch](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role) - For 2 on/off states, like a more specific checkbox.
   - [tab](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role)
@@ -45,7 +45,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - Add a heading to each major section of the UI, like navigation, even if visually hidden because [many screen reader users don’t navigate by landmarks](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/) but do navigate by headings.
 - After client-side routing, [Provide a skip link that takes focus on a route change](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/) within the site, with a label that indicates what the link will do when activated: e.g. "skip to main navigation". Include an ARIA Live Region on page load. On a route change, append text to it indicating the current page, e.g. "Portfolio page".
 - Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
-- For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted". 
+- For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted".
 - Announce when something is expanded or collapsed.
 - Avoid spelling phonetically because Braille readers get confused. Screen reader users are used to words being mispronounced.
 - Set the tabindex=-1 to convey that something can only be focused via a func call. Useful for headers that you want to focus programmatically when an anchor is clicked.
@@ -64,12 +64,13 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] [Are `aria-live` and a skip link being used to announce the new page](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/)?
 - [ ] [Is `aria-current` being used to mark and style active links](https://twitter.com/housecor/status/1476910306702077954)?
 - [ ] Can I navigate the app via the keyboard in a logical order? Can I always see what is focused? (use inert for invisible, rendered elements)
-- [ ] Is the [input type specified as specific as possible](https://twitter.com/mgechev/status/1483673112856219649?s=27)? 
+- [ ] Are radios and other related fields [wrapped in a fieldset](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#the_fieldset_and_legend_elements)?
+- [ ] Is the [input type specified as specific as possible](https://twitter.com/mgechev/status/1483673112856219649?s=27)?
 - [ ] When I click on a link, does it focus the proper item? If I click an anchor, does it focus the heading?
-- [ ] Is the markup semantic? Does it use the most specific tag possible. 
+- [ ] Is the markup semantic? Does it use the most specific tag possible.
 - [ ] Search the code: Where is `role` used? Could a semantic tag be used instead?
 - [ ] Are useful [landmarks](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#landmark_roles) displayed in the rotor? (Use good semantic markup, and apply roles when semantic markup isn't possible/sufficient)
-- [ ] Are buttons and anchors being used as intended? [They operate differently](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#accessibility_concerns). (search code for these tags to focus audit) 
+- [ ] Are buttons and anchors being used as intended? [They operate differently](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#accessibility_concerns). (search code for these tags to focus audit)
 - [ ] Have we reviewed everything that can't be automated that's on [a11y-automation](https://a11y-automation.dev/)? This site lists the status of each thing to check, and whether it can be automated.
 
 ## A General Audit Workflow (h/t to Marcy Sutton)
@@ -104,6 +105,7 @@ As I dive in to fix accessibility problems with code, I prioritize them based on
 ## Accessible UI Components
 
 These sites contain UI components that are focused on a11y. Good to use as foundations or as inspiration.
+
 - [digitala11y](https://www.digitala11y.com/accessible-ui-component-libraries-roundup/?ck_subscriber_id=1319725958)
 
 ## Screen Readers
@@ -152,6 +154,7 @@ I offer on-site training and consulting on JavaScript, React, and accessibility 
 - Navigate elements: `Ctrl+cmd+arrows`
 
 Announce table cell header:
+
 - `Cmd+ctrl+backslash` while reading table cell to enter table mode.
 - `Cmd+ctrl+T+H` to announce current cell's headers.
 
@@ -164,4 +167,3 @@ Announce table cell header:
 - [Quick Nav](https://support.apple.com/guide/voiceover/with-quick-nav-vo27943/mac): Hold both arrow keys to toggle. (allows navigating via arrows). Press up down to change sections, left right to nav within a section. Note that tables read out the headers as you navigate the content.
 - TIP: Voiceover works best in Safari. Avoid using Voiceover on a browser with many tabs/windows open. Doing so will cause it to take a long time to initialize. So if you have many tabs open in Chrome for instance, use Firefox or Safari.
 - [More tips / keyboard shortcuts](https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts)
-
