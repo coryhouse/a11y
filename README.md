@@ -44,6 +44,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - Be deliberate and careful with motion. Check [prefers-reduced-motion](https://tatianamac.com/posts/prefers-reduced-motion/?ck_subscriber_id=1319725958) and minimize motion if set.
 - Add a heading to each major section of the UI, like navigation, even if visually hidden because [many screen reader users don’t navigate by landmarks](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/) but do navigate by headings.
 - After client-side routing, [Provide a skip link that takes focus on a route change](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/) within the site, with a label that indicates what the link will do when activated: e.g. "skip to main navigation". Include an ARIA Live Region on page load. On a route change, append text to it indicating the current page, e.g. "Portfolio page".
+- Avoid built-in form validation. Ironically, [it's not accessible](https://adrianroselli.com/2019/02/avoid-default-field-validation.html)
 - Consider HTML order. Remember that screen readers read top down. So avoid putting extraneous things before the main content (sharing, tags, ads, etc)
 - For toggles, make it clear whether it's selected. And what will happen if it's clicked. For example prefer "Currently muted, click to unmute" over "muted".
 - Announce when something is expanded or collapsed.
