@@ -80,7 +80,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 1. Try navigating the site with only my keyboard, taking note of what does and doesn't work.
 1. Scan the page with developer tools (Accessibility Insights is one of my go-tos).
 1. Take note of how screen readers behave on Mac, Windows, and even mobile devices & emulators.
-1. Zoom in and out and watch for how content reacts.
+1. Zoom in and out and watch for how content reacts. The Web Content Accessibility Guidelines (WCAG) state that in order to be accessible, a site should be usable at 200% zoom. This number is really a minimum - many folks with vision disorders often zoom any farther.
 
 Once I've got a list of things that need addressed from the user side of things, I start in on the code. I often start conversations with Creative/Design teams as well to prevent accessibility issues earlier in the software development lifecycle.
 
