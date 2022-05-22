@@ -65,7 +65,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] [Are `aria-live` and a skip link being used to announce the new page](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/)?
 - [ ] [Is `aria-current` being used to mark and style active links](https://twitter.com/housecor/status/1476910306702077954)?
 - [ ] Can I navigate the app via the keyboard in a logical order? Can I always see what is focused? (use inert for invisible, rendered elements)
-- [ ] Are radios and other related fields [wrapped in a fieldset](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#the_fieldset_and_legend_elements)?
+- [ ] Are radios and other related fields [wrapped in a fieldset](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#the_fieldset_and_legend_elements)? - NOTE: When you do, [wrap each radio in a div, not a p](https://twitter.com/housecor/status/1528043515044823041)
 - [ ] Is the [input type specified as specific as possible](https://twitter.com/mgechev/status/1483673112856219649?s=27)?
 - [ ] When I click on a link, does it focus the proper item? If I click an anchor, does it focus the heading?
 - [ ] Is the markup semantic? Does it use the most specific tag possible.
