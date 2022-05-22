@@ -69,6 +69,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Is the [input type specified as specific as possible](https://twitter.com/mgechev/status/1483673112856219649?s=27)?
 - [ ] When I click on a link, does it focus the proper item? If I click an anchor, does it focus the heading?
 - [ ] Is the markup semantic? Does it use the most specific tag possible.
+- [ ] [Are font sizes declared in em/rem](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)? Other values like padding/margin/border width should be declared via pixels so they don't change and take up a bunch of space when the user has font size/zoom cranked up (which would make content harder to read by making each line very short). Rule: If the value should increase with the default font size, use rem. Otherwise, use px.
 - [ ] Search the code: Where is `role` used? Could a semantic tag be used instead?
 - [ ] Are useful [landmarks](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#landmark_roles) displayed in the rotor? (Use good semantic markup, and apply roles when semantic markup isn't possible/sufficient)
 - [ ] Are buttons and anchors being used as intended? [They operate differently](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#accessibility_concerns). (search code for these tags to focus audit)
