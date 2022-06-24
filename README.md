@@ -59,11 +59,11 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Are required fields marked via `aria-required` (or the required attribute if you want native behavior)?
 - [ ] Are invalid fields (that failed validation) marked via `aria-invalid`?
 - [ ] Do errors have a role="alert"?
-- [ ] Are any buttons disabled? Don't. [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/). [Use aria-disabled instead](https://css-tricks.com/making-disabled-buttons-more-inclusive/). Or, consider [these disabled button approaches and alternatives](https://stories.justinewin.com/disabled-buttons-dont-have-to-suck-10da0bb6d37e).
+- [ ] Are any buttons disabled? Don't. [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/). Instead, [use aria-disabled and ignore clicks](https://css-tricks.com/making-disabled-buttons-more-inclusive/). Or, consider [these disabled button approaches and alternatives](https://stories.justinewin.com/disabled-buttons-dont-have-to-suck-10da0bb6d37e).
 - [ ] Is Navigation well-named?
 - [ ] Is the HTML lang tag set when the language changes?
 - [ ] Is [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) set on the relevant form fields?
-- [ ] [Are `aria-live` and a skip link being used to announce the new page](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/)?
+- [ ] [Are `aria-live` and a skip link being used to announce the new page](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/)? **Note**: The aria-live attribute must be present in the DOM right from the beginning, even if the element doesn’t hold any message yet, otherwise, Assistive Technologies may not work properly.
 - [ ] [Is `aria-current` being used to mark and style active links](https://twitter.com/housecor/status/1476910306702077954)?
 - [ ] Can I navigate the app via the keyboard in a logical order? Can I always see what is focused? (use inert for invisible, rendered elements)
 - [ ] Are radios and other related fields [wrapped in a fieldset](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#the_fieldset_and_legend_elements)? - NOTE: When you do, [wrap each radio in a div, not a p](https://twitter.com/housecor/status/1528043515044823041)
