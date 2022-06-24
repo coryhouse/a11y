@@ -68,6 +68,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Can I navigate the app via the keyboard in a logical order? Can I always see what is focused? (use inert for invisible, rendered elements)
 - [ ] Are radios and other related fields [wrapped in a fieldset](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#the_fieldset_and_legend_elements)? - NOTE: When you do, [wrap each radio in a div, not a p](https://twitter.com/housecor/status/1528043515044823041)
 - [ ] Is the [input type specified as specific as possible](https://twitter.com/mgechev/status/1483673112856219649?s=27)?
+- [ ] Is aria-busy being used? Don't. [Few screenreaders honor it, and it ironically makes the content inaccessible](https://developer.paciellogroup.com/blog/2018/05/short-note-on-being-busy/)
 - [ ] Is the title attribute used anywhere? [Don't](https://www.paciellogroup.com/blog/2013/01/using-the-html-title-attribute-updated/). It hides content from mobile and tablet users as well as assistive tech users and keyboard only users.
 - [ ] When I click on a link, does it focus the proper item? If I click an anchor, does it focus the heading?
 - [ ] Is the markup semantic? Does it use the most specific tag possible.
