@@ -76,7 +76,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] [Are font sizes declared in em/rem](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)? Other values like padding/margin/border width should be declared via pixels so they don't change and take up a bunch of space when the user has font size/zoom cranked up (which would make content harder to read by making each line very short). Rule: If the value should increase with the default font size, use rem. Otherwise, use px.
 - [ ] Search the code: Where is `role` used? Could a semantic tag be used instead?
 - [ ] Are useful [landmarks](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#landmark_roles) displayed in the rotor? (Use good semantic markup, and apply roles when semantic markup isn't possible/sufficient)
-- [ ] Are buttons and anchors being used as intended? [They operate differently](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#accessibility_concerns). (search code for these tags to focus audit)
+- [ ] Are buttons and anchors being used as intended? [They operate differently](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#accessibility_concerns). (search code for these tags to focus audit). [My summary in a tweet](https://twitter.com/housecor/status/1541037184622403584)
 - [ ] Have we reviewed everything that can't be automated that's on [a11y-automation](https://a11y-automation.dev/)? This site lists the status of each thing to check, and whether it can be automated.
 
 ## A General Audit Workflow (h/t to Marcy Sutton)
