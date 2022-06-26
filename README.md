@@ -61,7 +61,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Do errors have a role="alert"?
 - [ ] Are any buttons disabled? Don't. [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/). Instead, [use aria-disabled and ignore clicks](https://css-tricks.com/making-disabled-buttons-more-inclusive/). Or, consider [these disabled button approaches and alternatives](https://stories.justinewin.com/disabled-buttons-dont-have-to-suck-10da0bb6d37e).
 - [ ] Is Navigation well-named?
-- [ ] Open the screen reader's rotor: Are links, heading, buttons all well named? Avoid links with text of "click here".
+- [ ] Open the screen reader's rotor: Are links, heading, buttons all well named? (Avoid links with text of "click here"). Do headings start at h1 and descend logically? 
 - [ ] Is the HTML lang tag set when the language changes?
 - [ ] Is [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) set on the relevant form fields?
 - [ ] [Are `aria-live` and a skip link being used to announce new content/alerts/pages](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/)? **Note**: The aria-live attribute must be present in the DOM right from the beginning, even if the element doesn’t hold any message yet, otherwise, Assistive Technologies may not work properly.
