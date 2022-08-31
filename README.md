@@ -108,6 +108,15 @@ As I dive in to fix accessibility problems with code, I prioritize them based on
 - [Pa11y](https://pa11y.org/) - Run a11y checks on your CI server
 - [Complete Guide to a11y tooling](https://www.smashingmagazine.com/2021/06/complete-guide-accessibility-tooling/)
 
+## Automated testing
+
+Many queries in [jest-dom](https://github.com/testing-library/jest-dom) help encourage a11y:
+  - [ ] [toBeRequired](https://github.com/testing-library/jest-dom#toberequired)
+  - [ ] [toBeInvalid](https://github.com/testing-library/jest-dom#tobeinvalid)
+  - [ ] [toHaveFocus](https://github.com/testing-library/jest-dom#tohavefocus)
+  - [ ] [toHaveDescription](https://github.com/testing-library/jest-dom#tohavedescription)
+  - [ ] [toHaveDisplayValue](https://github.com/testing-library/jest-dom#tohavedisplayvalue)
+
 ## Accessible UI Components
 
 These sites contain UI components that are focused on a11y. Good to use as foundations or as inspiration.
