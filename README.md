@@ -50,6 +50,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - Announce when something is expanded or collapsed.
 - Avoid spelling phonetically because Braille readers get confused. Screen reader users are used to words being mispronounced.
 - Set the tabindex=-1 to convey that something can only be focused via a func call. Useful for headers that you want to focus programmatically when an anchor is clicked.
+- **WCAG text notes** - If the text is 18pt / 24 px or larger, it counts as “large-scale text” and only needs to meet a 3:1. For headings to pass 3:1, they need to be at least 24 px (or 14px bold). A submit button is a user interface component, so it also only needs to meet 3:1. WCAG defines a user interface component as “a part of the content that is perceived by users as a single control for a distinct function”. A submit button is a single control, sitting on its own line with padding and a background color. If it were a text link in the middle of a paragraph, it wouldn’t meet the same requirements and would thus need to meet 4.5:1. Unless it was 24px or larger!
 
 ## A11y Audit Checklist
 
