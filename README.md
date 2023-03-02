@@ -60,7 +60,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Are required fields marked via `aria-required` (or the required attribute if you want native behavior)?
 - [ ] Are invalid fields (that failed validation) marked via `aria-invalid`?
 - [ ] Do errors have a role="alert"?
-- [ ] Are any buttons disabled? Don't. [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/). Instead, [use aria-disabled and ignore clicks](https://css-tricks.com/making-disabled-buttons-more-inclusive/). Or, consider [these disabled button approaches and alternatives](https://stories.justinewin.com/disabled-buttons-dont-have-to-suck-10da0bb6d37e).
+- [ ] Are any buttons disabled? Don't. [Disabled buttons suck](https://axesslab.com/disabled-buttons-suck/). Instead, [use aria-disabled and ignore clicks](https://css-tricks.com/making-disabled-buttons-more-inclusive/). Or, consider [these disabled button approaches and alternatives](https://stories.justinewin.com/disabled-buttons-dont-have-to-suck-10da0bb6d37e). [My tweet on this](https://twitter.com/housecor/status/1540054866420289539)
 - [ ] Is Navigation well-named?
 - [ ] Open the screen reader's rotor: Are links, heading, buttons all well named? (Avoid links with text of "click here"). Do headings start at h1 and descend logically? 
 - [ ] Is the HTML lang tag set when the language changes?
