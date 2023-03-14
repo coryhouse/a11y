@@ -92,6 +92,10 @@ Once I've got a list of things that need addressed from the user side of things,
 
 As I dive in to fix accessibility problems with code, I prioritize them based on user impact and the Web Content Accessibility Guidelines. I aim to fix things one viewport size at a time, though it's important to double check that changes in one place don't have an effect on others.
 
+## What about Accessibility Overlays?
+
+Aviod them. There's no free lunch. [Here's more on why](https://overlayfactsheet.com/)
+
 ## A11y Tools
 
 - Chrome Audits tab (powered by [Lighthouse](https://developers.google.com/web/tools/lighthouse))
