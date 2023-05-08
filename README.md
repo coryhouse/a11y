@@ -103,6 +103,7 @@ Aviod them. There's no free lunch. [Here's more on why](https://overlayfactsheet
 - [Axe](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) accessibility checker Chrome extension
 - [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)
 - [Axe Core CLI](https://github.com/dequelabs/axe-core) Axe CLI - Useful for CI.
+- [Nu Validator](https://validator.nu/)
 - [IBM Accessibility Tool](https://www.ibm.com/able/toolkit/tools/)
 - [Wave](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) accessibility evaluation tool for Chrome
 - [Siteimprove](https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc/related?hl=en-US)
