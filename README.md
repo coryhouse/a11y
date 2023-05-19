@@ -68,7 +68,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Is [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) set on the relevant form fields?
 - [ ] [Are `aria-live` and a skip link being used to announce new content/alerts/pages](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/)? **Note**: The aria-live attribute must be present in the DOM right from the beginning, even if the element doesn’t hold any message yet, otherwise, Assistive Technologies may not work properly.
 - [ ] [Is `aria-current` being used to mark and style active links](https://twitter.com/housecor/status/1476910306702077954)?
-- [ ] Can I navigate the app via the keyboard in a logical order? Can I always see what is focused? (use inert for invisible, rendered elements)
+- [ ] Can I navigate the app via the keyboard in a logical order? Can I always see what is focused? (use inert for invisible, rendered elements). Check tab, arrows keys, focus rings, escape.
 - [ ] Are radios and other related fields [wrapped in a fieldset](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#the_fieldset_and_legend_elements)? - NOTE: When you do, [wrap each radio in a div, not a p](https://twitter.com/housecor/status/1528043515044823041)
 - [ ] Is the [input type specified as specific as possible](https://twitter.com/mgechev/status/1483673112856219649?s=27)?
 - [ ] Is aria-busy being used? Don't. [Few screenreaders honor it, and it ironically makes the content inaccessible](https://developer.paciellogroup.com/blog/2018/05/short-note-on-being-busy/)
