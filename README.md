@@ -19,6 +19,12 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 
 [Slides from "Building Accessible Web Apps"](https://www.dropbox.com/s/ozpzgcutaal5h26/Building%20Accessible%20Web%20Apps.pptx?dl=0)
 
+## Why
+
+- It's the right thing to do
+- It makes development and test easier too by encouraging semantic markup
+- The American Council for the Blind and others are filing suits. Number/year keeps growing.
+
 ## A11y Tips
 
 - The first rule of ARIA: Don't use ARIA. Consider it a last resort. Start with semantic HTML.
