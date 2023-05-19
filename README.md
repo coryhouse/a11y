@@ -179,7 +179,7 @@ Announce table cell header:
 - `Cmd+ctrl+backslash` while reading table cell to enter table mode.
 - `Cmd+ctrl+T+H` to announce current cell's headers.
 
-### Voiceover Cheatsheet
+### VoiceOver Cheatsheet
 
 - Open/close: CMD+F5 (or, via toolbar if enabled in preferences)
 - "VO" default chord: Ctrl+Alt
@@ -188,3 +188,10 @@ Announce table cell header:
 - [Quick Nav](https://support.apple.com/guide/voiceover/with-quick-nav-vo27943/mac): Hold both arrow keys to toggle. (allows navigating via arrows). Press up down to change sections, left right to nav within a section. Note that tables read out the headers as you navigate the content. To Nav between table cells: Ctrl+Alt+arrow.
 - TIP: Voiceover works best in Safari. Avoid using Voiceover on a browser with many tabs/windows open. Doing so will cause it to take a long time to initialize. So if you have many tabs open in Chrome for instance, use Firefox or Safari.
 - [More tips / keyboard shortcuts](https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts)
+
+## iPhone VoiceOver Cheatsheet
+- Use two finger rotation to engage the rotor
+- Drag one finger around the screen to explore via touch
+- Swipe left and right with one finger to move the cursor one element at a time
+- Double tap with one finger to activate the current element
+- 2 finger tap to pause VoiceOver speaking
