@@ -153,7 +153,7 @@ These sites contain UI components that are focused on a11y. Good to use as found
 - [A11yCasts on YouTube](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 - [Free Udacity Web Accessibility Course by Google](https://www.udacity.com/course/web-accessibility--ud891)
 - [Aria Spec on W3](https://www.w3.org/TR/wai-aria-1.1/#intro_ria_accessibility)
-- [Aria Authoring Practices Spec](https://www.w3.org/TR/wai-aria-practices-1.1/)
+- [Aria Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) - Guide for how to create your own accessible components
 - [Accessibility Fundamentals from Google](https://developers.google.com/web/fundamentals/accessibility)
 - [In Browser ChromeVox Demo](http://udacity.github.io/ud891/lesson3-semantics-built-in/02-chromevox-lite/)
 - [Aria Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
