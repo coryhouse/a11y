@@ -64,6 +64,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
 - [ ] Are form labels tied to the input?
 - [ ] Are form errors announced immediately, and marked as errors?
 - [ ] Do toggles and buttons announce their state via aria-pressed?
+- [ ] Is [aria-haspopup](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-haspopup) used for elements trigger a popup?
 - [ ] Are required fields marked via `aria-required` (or the required attribute if you want native behavior)?
 - [ ] Are invalid fields (that failed validation) marked via `aria-invalid`?
 - [ ] Do errors have a role="alert"?
