@@ -163,6 +163,7 @@ These sites contain UI components that are focused on a11y. Good to use as found
 - [Marcy Sutton's Blog on Accessibility](https://marcysutton.com/)
 - [Accessibility in React Apps](https://www.aditus.io/talks/react-and-accessibility/)
 - [Video of someone using a screenreader on multiple sites](https://www.youtube.com/watch?v=OUDV1gqs9GA&t=11s)
+- [A11y myts](https://a11ymyths.com/)
 
 ## Training
 
