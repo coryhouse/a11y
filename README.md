@@ -34,7 +34,7 @@ The master branch contains an app with **bad** accessibility. Checkout the `fixe
   - Figma tools like [Stark](https://www.figma.com/community/plugin/732603254453395948/Stark) and [A11y Annotation Kit](https://www.figma.com/community/file/953682768192596304) allow designers to convey a11y info.
   - Visual treatments should have sufficient contrast and not rely upon color alone. Use [WCAG contrast checker](https://webaim.org/resources/contrastchecker/)
 - Semantic HTML is the foundation. [div or span is a last resort](https://twitter.com/housecor/status/1434168409072324610). Use the tag that's designed for the job. Avoid creating custom elements when a native one exists. [Here's an example where a custom element was useful](https://giuseppegurgone.com/twitter-html/?ck_subscriber_id=193063445)
-- aria-label is basically [only for interactive and landmark elements](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute#support).
+- aria-label is basically [only for interactive and landmark elements](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute#support). It's also [a code smell](https://ericwbailey.website/published/aria-label-is-a-code-smell/). (prefer visible text or visually hidden text if possible). Also, [aria-label often doesn't translate](https://adrianroselli.com/2019/11/aria-label-does-not-translate.html), so prefer visual text, or aria-labeledby pointing to visible text, or sr-only text.
 - Role is a last resort. Again, prefer a specific tag first.
   - `h1` has a role="heading
   - `button` has role="button"
